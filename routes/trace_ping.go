@@ -2,8 +2,8 @@ package routes
 
 import (
 	"fmt"
-	"io"
 	"net/http"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
@@ -13,10 +13,14 @@ type PingTest struct {
 }
 
 func Trace_Ping(gc *gin.Context) {
+
+	println(gc.Query(os.Getenv("CLIENT_VAR")))
+	fmt.Println("request header", gc.Request)
 	println(gc.RemoteIP())
-	fmt.Println("request header", gc.Request.Header)
-	body, _ := io.ReadAll(gc.Request.Body)
-	println(string(body))
+	println(gc.GetHeader("CF-Connecting-IP"))
+	println(gc.GetHeader("X-Forwarded-For"))
+	println(gc.GetHeader("CF-IPCountry"))
+
 	pingTest := PingTest{
 		Ping: "pong",
 	}
