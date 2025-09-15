@@ -37,6 +37,8 @@ func get_tracker(trackerID string) (Tracker, error) {
 		log.Fatalf("Error reading directory %s: %v", Tracker_Records, err)
 	}
 
+	log.Println("List of entries", entries)
+
 	for _, entry := range entries {
 		if strings.HasSuffix(entry.Name(), ".json") {
 			tracker_record, err := compare_trackerID_to_tracker_record(trackerID, entry.Name())
@@ -69,6 +71,7 @@ func compare_trackerID_to_tracker_record(trackerID string, entry string) (Tracke
 	}
 
 	if tracker_record.TrackerID == trackerID {
+		log.Println("Matched records")
 		return tracker_record, err
 	}
 
