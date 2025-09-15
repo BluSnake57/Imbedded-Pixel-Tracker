@@ -1,2 +1,3 @@
 .env
 tracker_records/*
+!tracker_records/.gitkeep
