@@ -70,7 +70,7 @@ func generate_tracker_url(tracker Tracker) string {
 
 	u, err := url.ParseRequestURI(new_url)
 	if err != nil {
-		log.Fatalln("Could not generate valid URL:", err)
+		log.Println("WARNING: Could not validate URL:", err)
 	}
 
 	return u.String()
