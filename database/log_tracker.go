@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 )
 
@@ -37,12 +38,14 @@ func get_tracker(trackerID string) (Tracker, error) {
 	}
 
 	for _, entry := range entries {
-		tracker_record, err := compare_trackerID_to_tracker_record(trackerID, entry.Name())
-		if err != nil {
-			return Tracker{}, err
-		}
-		if tracker_record.ClientID != "" {
-			return tracker_record, err
+		if strings.HasSuffix(entry.Name(), ".json") {
+			tracker_record, err := compare_trackerID_to_tracker_record(trackerID, entry.Name())
+			if err != nil {
+				return Tracker{}, err
+			}
+			if tracker_record.ClientID != "" {
+				return tracker_record, err
+			}
 		}
 	}
 
