@@ -5,7 +5,6 @@ import (
 	"IPT/Imbedded-Pixel-Tracker/routes"
 	"IPT/Imbedded-Pixel-Tracker/routes_client"
 	"IPT/Imbedded-Pixel-Tracker/routes_server"
-	"os"
 
 	"github.com/joho/godotenv"
 )
@@ -17,16 +16,7 @@ func main() {
 
 	//Eventually should add a database in case of large number of simultaneous trackers
 
-	path, exists := os.LookupEnv("PATH")
-
-	if !exists {
-		println("Must assign PORT env variable")
-		os.Exit(1)
-	} else {
-		println(path)
-	}
-
-	r := router.NewRouter(os.Getenv("PORT")) //Creates new router with specified IP
+	r := router.NewRouter(":4040") //Creates new router with specified IP
 
 	router.AddRoute(&r, router.Receiver{
 		Route:      "/ping",                    //Path to accesss through url

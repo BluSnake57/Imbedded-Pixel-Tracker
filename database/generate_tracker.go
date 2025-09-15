@@ -66,7 +66,7 @@ func generate_tracker_record(tracker Tracker) error {
 
 // Generates the URL for the tracker
 func generate_tracker_url(tracker Tracker) string {
-	var new_url = os.Getenv("PROTOCOL") + "://" + os.Getenv("HOST") + os.Getenv("PORT") + "/trace_client" + "?" + os.Getenv("CLIENT_VAR") + "=" + tracker.TrackerID
+	var new_url = os.Getenv("PROTOCOL") + "://" + os.Getenv("HOST") + "/trace_client" + "?" + os.Getenv("CLIENT_VAR") + "=" + tracker.TrackerID
 
 	u, err := url.ParseRequestURI(new_url)
 	if err != nil {
