@@ -43,7 +43,7 @@ In terminal/console enter this directory and then run
 
 It runs on port 4040
 
-### CLI
+### CLI (Basic but recommended)
 
 The basic commands are
 - Help: this will list all commands and uses
@@ -51,7 +51,7 @@ The basic commands are
 - Status \[tracker-name\]: will show the status of a tracker
 - Delete \[tracker-name\]: will delete a tracker
 
-### Network Requests
+### Network Requests (Not recommended)
 
 The paths are
 - /initalize_tracker
@@ -64,4 +64,4 @@ throw together a CLI
 Also no I didn't put one on this page...probably could've tho I'd be curious to know if that works (Don't do it you could probably get your account banned)
 
 Side note I found some interesting stuff relating to who does and doesn't pre-download image links 
-crazy enough Discord was the only one I found to actually do it
+crazy enough Discord was the only one I found to actually do it ¯\_(ツ)_/¯
