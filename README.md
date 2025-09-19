@@ -1,6 +1,6 @@
 > [!CAUTION]
-> Yes, this is legitimate spyware so please be thoughtful about how you use it
-> No there will not be any permanent changes to any systems after running it
+> Yes, this is legitimate spyware so please be thoughtful about how you use it.
+> No there will not be any permanent changes to any systems after running it.
 > Please don't use this for anything malicious
 
 # Imbedded Pixel Tracker
@@ -16,9 +16,7 @@ currently the information is not locked once it's opened so it can be overwritte
 I really made this as a jumping off point for anyone that was like me who really want to know how 
 this kind of thing works but don't quite have the know how yet to figure it out
 
-> [!NOTE] 
-> If you get stuck on anything try using google, that's how I learned all of this so I know the info is out there if you're having a real hard time though feel free to make an 
-> issue ticket and I'll try and give you a hand.
+
 
 ## Prerequisites
 
@@ -27,6 +25,10 @@ Golang (No specific version but I used 1.24.7)
 Cloudflare proxy (If planning to run outside of your network)
 
 ## Setup/Usage
+
+> [!NOTE] 
+> If you get stuck on anything try using google, that's how I learned all of this so I know the info is out there if you're having a real hard time though feel free to make an 
+> issue ticket and I'll try and give you a hand.
 
 You can either run this tool from CLI or by sending web requests, the web request method is more fleshed out but both do work
 
@@ -44,17 +46,17 @@ It runs on port 4040
 ### CLI
 
 The basic commands are
--Help: this will list all commands and uses
--Create \[tracker-name\]: will create a tracking link
--Status \[tracker-name\]: will show the status of a tracker
--Delete \[tracker-name\]: will delete a tracker
+- Help: this will list all commands and uses
+- Create \[tracker-name\]: will create a tracking link
+- Status \[tracker-name\]: will show the status of a tracker
+- Delete \[tracker-name\]: will delete a tracker
 
 ### Network Requests
 
 The paths are
--/initalize_tracker
--/get_status
--/kill_tracker
+- /initalize_tracker
+- /get_status
+- /kill_tracker
 
 I recommend using curl to send these, I'm not going to be giving that much info on how to do this because it's kinda tedious...pretty much the whole reason I bothered to 
 throw together a CLI
