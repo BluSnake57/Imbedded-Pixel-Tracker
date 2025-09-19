@@ -1,5 +1,4 @@
 need to create a .env file with following variables
-PORT= #This is the port the service will be published on
 HOST= #This is the host/URL of the final service
 CLIENT_VAR= #This is used for the client variable in the client url
 PROTOCOL= #Should either be "http" or "https"
