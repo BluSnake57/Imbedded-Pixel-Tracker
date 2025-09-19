@@ -14,4 +14,10 @@ func Server_Routes(r router.Router) {
 		RouteType: router.RoutePost,
 		Sender:    Get_Status,
 	})
+
+	router.AddRoute(&r, router.Receiver{
+		Route:     "/kill_tracker",
+		RouteType: router.RoutePost,
+		Sender:    Kill_Tracker,
+	})
 }
