@@ -30,6 +30,8 @@ In terminal/console enter this directory and then run
 
 `go run .`
 
+It runs on port 4040
+
 ### CLI
 
 The basic commands are
