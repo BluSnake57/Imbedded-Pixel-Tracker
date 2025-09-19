@@ -64,4 +64,4 @@ throw together a CLI
 Also no I didn't put one on this page...probably could've tho I'd be curious to know if that works (Don't do it you could probably get your account banned)
 
 Side note I found some interesting stuff relating to who does and doesn't pre-download image links 
-crazy enough Discord was the only one I found to actually do it ¯\_(ツ)_/¯
+crazy enough Discord was the only one I found to actually do it ¯\\_(ツ)_/¯
