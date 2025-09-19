@@ -1,3 +1,8 @@
+> [!CAUTION]
+> Yes, this is legitimate spyware so please be thoughtful about how you use it
+> No there will not be any permanent changes to any systems after running it
+> Please don't use this for anything malicious
+
 # Imbedded Pixel Tracker
 
 A basic implementation of an imbedded pixel tracker. It can log IP Addresses along with access time, 
@@ -10,6 +15,10 @@ currently the information is not locked once it's opened so it can be overwritte
 
 I really made this as a jumping off point for anyone that was like me who really want to know how 
 this kind of thing works but don't quite have the know how yet to figure it out
+
+> [!NOTE] 
+> If you get stuck on anything try using google, that's how I learned all of this so I know the info is out there if you're having a real hard time though feel free to make an 
+> issue ticket and I'll try and give you a hand.
 
 ## Prerequisites
 
@@ -49,13 +58,6 @@ The paths are
 
 I recommend using curl to send these, I'm not going to be giving that much info on how to do this because it's kinda tedious...pretty much the whole reason I bothered to 
 throw together a CLI
-
-> [!WARNING]
-> Please don't use this for anything melicious
-
-> [!NOTE] 
-> If you get stuck on anything try using google, that's how I learned all of this so I know the info is out there if you're having a real hard time though feel free to make an 
-> issue ticket and I'll try and give you a hand.
 
 Also no I didn't put one on this page...probably could've tho I'd be curious to know if that works (Don't do it you could probably get your account banned)
 
