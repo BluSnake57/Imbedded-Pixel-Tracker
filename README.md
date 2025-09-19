@@ -50,10 +50,10 @@ The paths are
 I recommend using curl to send these, I'm not going to be giving that much info on how to do this because it's kinda tedious...pretty much the whole reason I bothered to 
 throw together a CLI
 
-**Warning**
+[!WARNING]
 Please don't use this for anything melicious
 
-**Note**
+[!NOTE]
 If you get stuck on anything try using google, that's how I learned all of this so I know the info is out there if you're having a real hard time though feel free to make an 
 issue ticket and I'll try and give you a hand.
 
